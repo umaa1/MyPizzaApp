@@ -32,10 +32,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     public void onBindViewHolder(ProductViewHolder holder, int position) {
         Product product=productList.get(position);
         holder.textViewTitle.setText(product.getTitle());
-        holder.textViewRating.setText(String.valueOf(product.getRating()));
         holder.textViewPrice.setText(String.valueOf(product.getPrice()));
 
-        holder.imageView.setImageDrawable(mCtx.getResources().getDrawable(product.getImage()));
+        /*Glide.with(mCtx)
+                .load(product.getImage())
+                .into(holder.imageView);*/
 
     }
 

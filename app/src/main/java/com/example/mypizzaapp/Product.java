@@ -6,14 +6,21 @@ public class Product {
     private String title, shortdesc;
     private double rating;
     private double price;
-    private int image;
+    private String image;
 
-    public Product(int id, String title, String shortdesc, double rating, double price, int image) {
+    public Product(int id, String title, String shortdesc, double price, String image) {
         this.id = id;
         this.title = title;
         this.shortdesc = shortdesc;
-        this.rating = rating;
-        this.price = price;
+        this.price = this.price;
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
         this.image = image;
     }
 
@@ -41,14 +48,6 @@ public class Product {
         this.shortdesc = shortdesc;
     }
 
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
     public double getPrice() {
         return price;
     }
@@ -57,11 +56,4 @@ public class Product {
         this.price = price;
     }
 
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
-    }
 }

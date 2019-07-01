@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mypizzaapp.LoginActivity"
-    android:background="@mipmap/background"
+    android:background="@mipmap/mix"
     >
 
     <ImageView
@@ -14,7 +14,7 @@
         android:id="@+id/logo"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:src="@mipmap/logo"/>
+        android:src="@mipmap/unnamed"/>
 
 
     <LinearLayout
@@ -28,6 +28,7 @@
 
         <EditText
             android:id="@+id/inputName"
+            android:textColor="@color/colorPrimary"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
@@ -36,26 +37,9 @@
             android:hint="Name"/>
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_below="@+id/inputName"
-        android:layout_margin="15dp"
-        android:id="@+id/inputFieldEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/inputEmail"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_below="@+id/inputFieldEmail"
         android:layout_margin="10dp"
         android:id="@+id/inputFieldPassword"
         android:layout_width="match_parent"
@@ -64,6 +48,7 @@
 
         <EditText
             android:id="@+id/inpuPassword"
+            android:textColor="@color/colorPrimary"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
@@ -86,15 +71,15 @@
             android:onClick="getList"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/buttonstyle"
             android:text="login"
-            android:layout_marginLeft="125dp"
+            android:layout_marginLeft="25dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_below="@+id/buttons"
+        android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_margin="20dp"
@@ -105,14 +90,14 @@
 
 
         <Button
-            android:onClick="getDetails"
-            android:background="@drawable/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/button2"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="Register Now"
-            android:layout_marginLeft="125dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_marginLeft="25dp"
+            android:onClick="getDetails"
+            android:text="Register Now" />
     </LinearLayout>
 
 
