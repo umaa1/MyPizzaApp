@@ -4,16 +4,23 @@ public class Product {
 
     private int id;
     private String title, shortdesc;
-    private double rating;
-    private double price;
+    private String price;
     private String image;
 
-    public Product(int id, String title, String shortdesc, double price, String image) {
+    public Product(int id, String title, String shortdesc, String price, String image) {
         this.id = id;
         this.title = title;
         this.shortdesc = shortdesc;
-        this.price = this.price;
+        this.price = price;
         this.image = image;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public String getImage() {
@@ -48,12 +55,6 @@ public class Product {
         this.shortdesc = shortdesc;
     }
 
-    public double getPrice() {
-        return price;
-    }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
 
 }
